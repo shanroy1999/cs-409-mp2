@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-const BASENAME = '/mp2';
+const BASENAME = '/cs-409-mp2';
 root.render(
   <React.StrictMode>
     <BrowserRouter basename={BASENAME}>
