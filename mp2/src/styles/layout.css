@@ -1,0 +1,140 @@
+.header {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.headerRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+}
+
+.nav {
+    margin-left: auto;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.navLink {
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+}
+
+.navLink.active {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.main {
+    padding: 1.5rem 0;
+}
+
+.footer {
+    color: var(--muted);
+    font-size: 0.875rem;
+    padding: 2rem 0;
+}
+
+.grid {
+    display: grid;
+    gap: 0.75rem;
+}
+
+/* Make the search results grid list look like cards (no bullets/padding) */
+.cards {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+/* Ensure images behave nicely in the card */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+    align-items: flex-end;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 220px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: .75rem;
+}
+
+.prose h1 {
+    margin: 0 0 0.5rem;
+}
+
+.twoCol {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(240px, 300px) 1fr;
+}
+
+/* Definition list spacing on the right column */
+.statsGrid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: .5rem 1rem;
+    align-items: center;
+}
+
+.mtSm {
+    margin-top: .75rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* Detail page two-column layout */
+.detail {
+    display: grid;
+    grid-template-columns: minmax(260px, 340px) 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    /* keep text from drifting over the image */
+}
+
+/* Stack on small screens */
+@media (max-width: 900px) {
+    .detail {
+        grid-template-columns: 1fr;
+    }
+}

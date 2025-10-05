@@ -1,0 +1,87 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.btn[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.btn.ghost {
+    background: transparent;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.75rem;
+    background: #fff;
+    box-shadow: var(--shadow);
+}
+
+.badge {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.125rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+.badge.active {
+    background: var(--accent);
+    color: #fff;
+}
+
+.status {
+    color: var(--muted);
+}
+
+.status.error {
+    color: #dc2626;
+}
+
+.square {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background: #f3f4f6;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.square>img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.statRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.statName {
+    width: 7.5rem;
+    text-transform: capitalize;
+    color: #374151;
+}
+
+meter {
+    width: 100%;
+    height: 0.5rem;
+}
