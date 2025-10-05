@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { NavLink, Route, Routes, Link } from 'react-router-dom'
 import { ListPage } from './pages/pokemon/ListPage'
