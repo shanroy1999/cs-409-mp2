@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { fetchIndex, fetchPokemon, idFromUrl } from '../../api/pokemon'
 import type { PokemonTypeName } from '../../api/types'
-import { Loader, ErrorMsg, Empty } from '../../components/common/State'
+import { Loader, ErrorMsg } from '../../components/common/State'
 import { useNavStore } from '../../app/store'
 
 const TYPES: PokemonTypeName[] = [
